@@ -129,9 +129,28 @@ div.gridImage3of3 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4rem;
+}
+
+@media (max-width: 70em) {
+    div.gridImage1of3 {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
 }
 
 /* Styling for paragraphs */
 p.bodyText {
     line-height: 150%;
+}
+
+/* Figure styling */
+figure {
+    margin: 3rem 0; 
+}
+
+figcaption {
+    margin-top: 1rem;
+    text-align: center;
+    font-style: italic; 
 }
