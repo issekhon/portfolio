@@ -75,6 +75,10 @@ h2 {
     color: rgb(57, 62, 65);
 }
 
+h2.splash {
+    text-align: center;
+}
+
 h3 {
     margin-bottom: 1.5rem;
 }
@@ -97,6 +101,10 @@ a.inText:hover, a.inText:focus {
 }
 
 /* Styling of images */
+img {
+    width: 100%;
+}
+
 a.imageLink {
     transition: opacity 0.25s;
 }
@@ -106,9 +114,21 @@ a.imageLink:hover, a.imageLink:focus {
 }
 
 img.imageLink {
+    border: solid rgba(0, 0, 0, 0.7);
     width: 100%;
     height: auto;
     vertical-align: top;
+}
+
+div.gridImage1of3 {
+    display: inline-block;
+    width: 33%;
+}
+
+div.gridImage3of3 {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Styling for paragraphs */
