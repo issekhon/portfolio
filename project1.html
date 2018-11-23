@@ -11,15 +11,16 @@
     <header>
         <nav class="main">
             <a href="portfolio.html">Ishpreet Sekhon</a>
-            <div class="navRight">
-                <a class="right external" href="index.html">Styleguide</a>
-            </div>
+            
         </nav>
     </header>
     <main>
         <h1>ZERO</h1>
         <img src="img/zero.png" alt="zero robot box art">
-        <p>Team: Ishpreet Sekhon, Brandyn Chew, Wan Haichao, Zoe Zhang</p>
+        <p class="bodyText">Team: Ishpreet Sekhon, Brandyn Chew, Wan Haichao, Zoe Zhang</p>
+        <p class="bodyText">Role: Programmer and Narrative Design</p>
+        <p class="bodyText">Tools: Unity, Monodevelop, Illustrator</p>
+        <p class="bodyText">Goal: Create a narrative based 2D game with interesting mechanics</p>
 
         <h2>The Process</h2>
         <section>
@@ -35,7 +36,7 @@
         <section>
             <h3>Narrative Design</h3>
             <p class="bodyText"> 
-                The initial idea for the game was to create a industrial style puzzle platforming game. The narrative was 
+                The initial idea for the game was to create a industrial art styled puzzle platforming game. The narrative was 
                 to have a few cutscenes in key moments, with backstory told throughout the environment through diagetic 
                 computer interfaces.
             </p>
@@ -44,26 +45,27 @@
                 <figcaption>Plot structure using foldback branching structure</figcaption>
             </figure>
             <p class="bodyText">
-                The goal of this initial structure was to create a foldback narrative through gameplay, where your gameplay choices
-                would affect the end story. The problem I encountered with this initial structure was that it only really gave the 
+                I designed this initial narrative structure was to create a foldback through gameplay, where your gameplay choices
+                would affect the end story. The problem we encountered with this structure was that it only really gave the 
                 illusion of choice as users actions early on didn't really have an impact towards the end of the game, only the most 
-                recent chocies they made.
+                recent chocie they made.
             </p>
             <figure>
                 <img src="img/plotStructureNew.png" alt="new structure of zero game plot">
                 <figcaption>New plot structure using delayed foldback</figcaption>
             </figure>
             <p class="bodyText">
-                Analyzing the problem I realized that we could create levels more rapidly than we initially planned, so I came up
-                with a structure that branched twice, with several levels never being seen if the player didn't take that direction. 
+                After creating a prototype in Unity I realized that I could prototype the levels rapibly by blocking them out without final
+                assets, making the process a lot faster. This meant we could use a more "expensive" narrative structure without 
+                foldbacks. This structure branches twice, with several levels never being seen if the player didn't take that direction. 
                 While normally that would seem like a waste of resources, it gave the game a replayability that it was initially 
-                lacking.
+                lacking and created that agency that we wanted.
             </p>
         </section>
 
         <section>
             <h3>Programming</h3>
-            <p class="bodyText">As the sole programmer for the project I was in charge of the Unity, script coding and 
+            <p class="bodyText">As the sole programmer for the project I was in charge of the Unity editing, script coding and 
                 level implementation. The first step of this was the player character's physics. I used Unity's built in 
                 rigidbody structure to create a character with weight. I then created simple block objects to use as floors
                 and then added checks in C# script and 2D colliders on the player to allow it to stay on platforms.
@@ -77,7 +79,7 @@
                 <figcaption>Hit detection code for the player collider</figcaption>
             </figure>
             <p class="bodyText">
-                After creating the character, I had to create the implementation for the levels. This used prefabs of various
+                After creating the character, I had to create the implementation for the levels. To do this I created prefabs of various
                 kinds of platforms placed throughout the levels in accordance with sketches from our team's level designer. 
                 Throughout this process, however, the scale of the actual implementation with the jumping physics for the player 
                 made it clear that the levels could not be completed. I fine tuned the player attribute values and positioning of 
@@ -86,6 +88,13 @@
             <figure>
                 <img src="img/zeroLevel.png" alt="a level in the game zero">
                 <figcaption>Second level in ZERO overview</figcaption>
+        </section>
+
+        <section>
+            <h3>Reflection</h3>
+            <p class="bodyText">After completing this project I gained a greater appreciation for the cost and time required
+                in game development. The challenge of the prototyping, and learning how to block out levels, made it possible to develop the levels without needing the team to be finished their assets first. This meant that I could work on the implementation while the assets for the levels were still being worked on. 
+            </p>
         </section>
     </main>
 
